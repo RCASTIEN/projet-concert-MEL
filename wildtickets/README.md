@@ -10,6 +10,9 @@ ReactJS, Reactstrap, Bootstrap, React Router, ReactDOM.
 
 This project will use the Songkick API to retrieve event data as a json file.
 
+##Functionality
+Filtre Concert, Géolocalisation, Groupe favoris, Enregistrement Date, Réservation, affichage par page, pop-up nouvelle date, top sales
+
 ## Installation
 
 * Git clone du repository ;
