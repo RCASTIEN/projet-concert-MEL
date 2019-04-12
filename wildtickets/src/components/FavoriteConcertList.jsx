@@ -2,26 +2,37 @@ import React, {Fragment} from 'react';
 import Concert from './Concert';
 import { Row } from 'reactstrap';
 import Container from 'reactstrap/lib/Container';
+import '../styles/main.css';
 
 class FavoriteConcertList extends React.Component {
-    constructor(props) {
-        super(props)
+   constructor(props) {
+       super(props)
 
-    }
-    render() {
-        return (
-            <Fragment>
-                <Container>
-                    <Row>
-                        <Concert />
-                        <Concert />
-                        <Concert />
-                        <Concert />
-                    </Row>
-                </Container>
-            </Fragment>
-        )
-    }
+   }
+   render() {
+       return (
+           <Fragment>
+               <Container>
+                   <Row className='scrolling-wrapper-flexbox'>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                       <Concert className='card'/>
+                   </Row>
+               </Container>
+           </Fragment>
+       )
+   }
 };
 
 export default FavoriteConcertList;
