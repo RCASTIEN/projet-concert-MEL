@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import Bands from './Bands';
+import { Row } from 'reactstrap';
+import Container from 'reactstrap/lib/Container';
 
 class FavoriteBandsList extends React.Component {
     constructor(props) {
@@ -7,9 +10,16 @@ class FavoriteBandsList extends React.Component {
     }
     render() {
         return (
-            <div>
-                Favorite Bands
-            </div>
+            <Fragment>
+                <Container>
+                    <Row>
+                        <Bands />
+                        <Bands />
+                        <Bands />
+                        <Bands />
+                    </Row>
+                </Container>
+            </Fragment>
         )
     }
 };
