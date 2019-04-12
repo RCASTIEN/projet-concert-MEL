@@ -13,6 +13,7 @@ class FavoriteConcertList extends React.Component {
        return (
            <Fragment>
                <Container>
+               <h1>Favorite Concerts</h1>
                    <Row className='scrolling-wrapper-flexbox'>
                        <Concert className='card'/>
                        <Concert className='card'/>
