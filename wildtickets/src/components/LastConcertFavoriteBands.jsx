@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import Concert from './Concert';
 import { Row } from 'reactstrap';
 import Container from 'reactstrap/lib/Container';
+import '../styles/main.css';
 
 class LastConcertFavoriteBands extends React.Component {
     constructor(props) {
@@ -12,11 +13,21 @@ class LastConcertFavoriteBands extends React.Component {
         return (
             <Fragment>
                 <Container>
-                    <Row>
-                        <Concert />
-                        <Concert />
-                        <Concert />
-                        <Concert />
+                    <Row className='scrolling-wrapper-flexbox'>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
+                        <Concert className='card'/>
                     </Row>
                 </Container>
             </Fragment>
