@@ -14,7 +14,7 @@ class LastConcertFavoriteBands extends React.Component {
             <Fragment>
                 <Container>
                 <h1>Next Favorites Bands' Concert</h1>
-                    <Row className='scrolling-wrapper-flexbox'>
+                    <Row className='scrolling-wrapper-flexbox grid grid-xs--scroll grid-xs-2--scroll'>
                         <Concert className='card'/>
                         <Concert className='card'/>
                         <Concert className='card'/>
