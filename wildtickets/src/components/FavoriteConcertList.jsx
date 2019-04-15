@@ -2,7 +2,6 @@ import React, {Fragment} from 'react';
 import Concert from './Concert';
 import { Row } from 'reactstrap';
 import Container from 'reactstrap/lib/Container';
-import '../styles/main.css';
 
 class FavoriteConcertList extends React.Component {
    constructor(props) {
