@@ -20,6 +20,7 @@ import {
 import { Heart, Search } from 'react-feather';
 
 import Header from './components/Header';
+import EventsList from './components/EventsList';
 
 class App extends Component {
   constructor(props) {
@@ -103,6 +104,7 @@ class App extends Component {
               </Card>
             </Col>
           </Row>
+          <EventsList />
         </Container>
       </Fragment>
     );
