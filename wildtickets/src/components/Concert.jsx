@@ -7,6 +7,7 @@ import {
     CardTitle,
     Col
   } from 'reactstrap';
+import { Heart } from 'react-feather';
 
 class Concert extends React.Component {
     constructor(props) {
@@ -26,7 +27,8 @@ class Concert extends React.Component {
                                 <h4 className="ellips-title">Concert Name</h4>
                                 <h6 className="ellips-title">Concert Date</h6>
                             </CardTitle>
-                            <Button className="discover-btn">More Informations</Button>
+                            <Heart className="heart-little-card" />
+                            <Button className="discover-btn">DISCOVER</Button>
                         </CardBody>
                     </Card>
                 </Col>
