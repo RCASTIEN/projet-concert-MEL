@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import './styles/App.css';
-import './styles/main.css';
+import './App.css';
 import {
   Container,
   Row,

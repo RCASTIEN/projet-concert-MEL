@@ -26,7 +26,7 @@ class Header extends Component {
     render() {
         return (
             <Fragment>
-                <Navbar color="light" light expand="md" className="sticky-top">
+                <Navbar color="light" light expand="lg" className="sticky-top">
                     <Link className="gradient-logo" to="/">WildTickets</Link>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
