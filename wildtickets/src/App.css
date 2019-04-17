@@ -95,6 +95,12 @@ a:hover {
     font-size: 24px;
 }
 
+.filterButton {
+    height: 50px;
+    margin-top: -15px;
+    background-color: red !important;
+}
+
 .main-search-icon {
     z-index: 100;
     position: absolute;
@@ -119,9 +125,14 @@ a:hover {
     border: none;
 }
 
-.card {
+.horizontalCard {
     border-radius: 1rem;
-    width: 14rem;
+    width: 70em;
+}
+
+.verticalCard {
+    border-radius: 1rem;
+    min-width: 14rem;
 }
 
 .card-title {

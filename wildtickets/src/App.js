@@ -1,25 +1,22 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
 import {
-  Container,
   Row,
-  Col,
+  Container,
   Form,
   Input,
   InputGroup,
   InputGroupAddon,
   Button,
-  Card,
-  CardImg,
-  CardBody,
-  CardTitle
 } from 'reactstrap';
 
 // Icons
-import { Heart, Search } from 'react-feather';
+import {  Search } from 'react-feather';
 
 import Header from './components/Header';
 import EventsList from './components/EventsList';
+import CardList from './components/CardList';
+import DropDownButton from './components/DropDownButton'
 
 class App extends Component {
   constructor(props) {
@@ -57,7 +54,11 @@ class App extends Component {
             <EventsList />
           </div>
           <br></br>
-          <h2 className="sub-title">Nearby</h2>
+          <Row>
+            <h2 className="sub-title col-9">Nearby</h2>
+            <DropDownButton />
+          </Row>
+          <CardList />
         </Container>
       </Fragment>
     );

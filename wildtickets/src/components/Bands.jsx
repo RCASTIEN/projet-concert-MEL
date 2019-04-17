@@ -18,7 +18,7 @@ class Bands extends React.Component {
     render() {
         const{name,avatar} = this.props;
         return (
-            <Col className="grid__item">
+            <Col className="grid__item verticalCard">
                 <Card>
                 <div className="img-container">
                     <CardImg className="oblique-img" style={{
