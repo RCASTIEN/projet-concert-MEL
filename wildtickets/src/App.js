@@ -52,58 +52,12 @@ class App extends Component {
               </InputGroupAddon>
             </InputGroup>
           </Form>
-          <h2 className="sub-title">Featured Artists</h2>
-          <Row className=" grid grid-xs--scroll grid-xs-2--scroll">
-            <Col className="grid__item">
-              <Card>
-                <div className="img-container">
-                  <CardImg className="oblique-img" top width="100%" src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap" />
-                </div>
-                <CardBody>
-                  <CardTitle><h4 className="ellips-title">Artist Name</h4></CardTitle>
-                  <Heart className="heart-little-card" />
-                  <Button className="discover-btn">DISCOVER</Button>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col className="grid__item">
-              <Card>
-                <div className="img-container">
-                  <CardImg className="oblique-img" top width="100%" src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap" />
-                </div>
-                <CardBody>
-                  <CardTitle><h4 className="ellips-title">Artist Name</h4></CardTitle>
-                  <Heart className="heart-little-card" />
-                  <Button className="discover-btn">DISCOVER</Button>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col className="grid__item">
-              <Card>
-                <div className="img-container">
-                  <CardImg className="oblique-img" top width="100%" src="https://images.pexels.com/photos/518389/pexels-photo-518389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap" />
-                </div>
-                <CardBody>
-                  <CardTitle><h4 className="ellips-title">Artist Name</h4></CardTitle>
-                  <Heart className="heart-little-card" />
-                  <Button className="discover-btn">DISCOVER</Button>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col className="grid__item">
-              <Card>
-                <div className="img-container">
-                  <CardImg className="oblique-img" top width="100%" src="https://images.pexels.com/photos/417475/pexels-photo-417475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap" />
-                </div>
-                <CardBody>
-                  <CardTitle><h4 className="ellips-title">Artist Name</h4></CardTitle>
-                  <Heart className="heart-little-card" />
-                  <Button className="discover-btn">DISCOVER</Button>
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
-          <EventsList />
+          <div className="mb-5">
+            <h2 className="sub-title mb-auto">Popular Artists</h2>
+            <EventsList />
+          </div>
+          <br></br>
+          <h2 className="sub-title">Nearby</h2>
         </Container>
       </Fragment>
     );
