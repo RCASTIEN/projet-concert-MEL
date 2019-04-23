@@ -161,6 +161,13 @@ a:hover {
 }
 
 /* Card Horizontal - Home */
+
+.horizontal-discover-btn {
+    background-image: linear-gradient(to right, #FF9671, #FF6F91);
+    margin-left: 3rem;
+    border: none;
+}
+
 .horizontalCard {
     border-radius: 1rem;
     width: 35em;

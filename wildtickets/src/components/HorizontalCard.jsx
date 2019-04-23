@@ -29,7 +29,7 @@ class HorizontalCard extends React.Component {
                                     <h4 className="ellips-title">{name}</h4>
                                 </CardTitle>
                                 <Heart className="heart-little-card" />
-                                <Button className="discover-btn">DISCOVER</Button>
+                                <Button className="horizontal-discover-btn">DISCOVER</Button>
                             </CardBody>
                         </Col>
                         <Col>
