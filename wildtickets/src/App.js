@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import Footer from './components/Footer'
 import './App.css';
 import {
   Container,
@@ -20,6 +19,7 @@ import {
 import { Heart, Search } from 'react-feather';
 
 import Header from './components/Header';
+import Footer from './components/Footer'
 import EventsList from './components/EventsList';
 
 class App extends Component {

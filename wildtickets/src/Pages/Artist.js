@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import {
     Container
 } from 'reactstrap';
+import Footer from '../components/Footer';
 
 class Artist extends Component {
     constructor(props) {
@@ -19,6 +20,7 @@ class Artist extends Component {
                 <Container className="bg-to-delete">
                     <h1>Artist</h1>
                 </Container>
+                <Footer />
             </Fragment>
         );
     }

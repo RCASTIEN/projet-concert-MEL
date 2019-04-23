@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Row, Col, Collapse } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { Facebook, Heart, Instagram, Twitter } from 'react-feather';
 
 class Footer extends React.Component {
     render() {
         return (
-            <div className="footer">
+            <Container className="footer">
                 <Row>
                     <Col className="col-lg-3 col-md-6 col-12 text-center">
                         <a href="#contact" title="Contact">Contact</a>
@@ -41,7 +41,7 @@ class Footer extends React.Component {
                         <a href="#top" alt="Today" title="Today">Today</a>
                     </Col>
                 </Row>
-            </div >
+            </Container>
         )
     }
 }
