@@ -7,7 +7,9 @@ import {
     CardTitle,
     Col
   } from 'reactstrap';
-  import { Heart } from 'react-feather';
+import { Heart } from 'react-feather';
+import "../styles/Heart.css"
+
 
 class Bands extends React.Component {
     constructor(props) {
@@ -15,12 +17,13 @@ class Bands extends React.Component {
         this.state={
             addToFavorite: false,
         }
+        this.handleAddToFavorite = this.handleAddToFavorite.bind(this);
     }
 
     handleAddToFavorite(e){
         e.preventDefault();
         this.setState({
-            addToFavorite: !this.state.addToFavorite
+            addToFavorite: !this.state.addToFavorite,
         })
     }
 
@@ -33,7 +36,7 @@ class Bands extends React.Component {
                 </div>
                 <CardBody>
                     <CardTitle><h4 className="ellips-title">Artist Name</h4></CardTitle>
-                    <Heart onClick={() => {handleAddToFavorite} } className="heart-little-card" />
+                    <Heart onClick={this.handleAddToFavorite} className={this.state.addToFavorite ? "heart-filled" : "heart-little-card" } />
                     <Button className="discover-btn">DISCOVER</Button>
                 </CardBody>
                 </Card>
