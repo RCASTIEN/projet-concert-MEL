@@ -10,6 +10,9 @@ import Concert from './Pages/Concert';
 import Artist from './Pages/Artist';
 import MyTickets from './Pages/MyTickets';
 import Favorites from './Pages/Favorites';
+import Contact from './Pages/Contact';
+import TermsOfUse from './Pages/TermsOfUse';
+import Sitemap from './Pages/Sitemap';
 import NotFound from './Pages/NotFound';
 
 // Router 
@@ -24,6 +27,9 @@ const Root = () => (
             <Route path='/artist' component={Artist} />
             <Route path='/mytickets' component={MyTickets} />
             <Route path='/favorites' component={Favorites} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/termsofuse' component={TermsOfUse} />
+            <Route path='/sitemap' component={Sitemap} />
             <Route component={NotFound} />
         </Switch>
     </BrowserRouter>
