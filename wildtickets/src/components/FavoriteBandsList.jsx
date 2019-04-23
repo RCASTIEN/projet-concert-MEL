@@ -6,7 +6,7 @@ import Container from 'reactstrap/lib/Container';
 class FavoriteBandsList extends React.Component {
     constructor(props) {
         super(props)
-        this.state={
+        this.state = {
             alert: false,
             message: undefined
         }
@@ -20,22 +20,22 @@ class FavoriteBandsList extends React.Component {
             alert: true,
             message: msg
         });
-        
-        setTimeout(()=>{
+
+        setTimeout(() => {
             this.setState({
                 alert: false,
                 message: undefined
             });
-        },2000);
+        }, 3000);
     }
     render() {
         return (
             <Fragment>
                 {
-                    this.state.alert && 
-                        <div class="alert alert-danger" role="alert">
-                            This is a danger alert—check it out!
-                        </div>
+                    this.state.alert &&
+                    <div class="alert alert-danger" role="alert">
+                        {this.state.message}
+                    </div>
 
                 }
                 <Container>
