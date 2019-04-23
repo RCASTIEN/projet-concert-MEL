@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Footer from './components/Footer'
 import './App.css';
 import {
   Container,
@@ -104,6 +105,7 @@ class App extends Component {
             </Col>
           </Row>
           <EventsList />
+          <Footer />
         </Container>
       </Fragment>
     );
