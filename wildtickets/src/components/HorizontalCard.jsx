@@ -8,7 +8,7 @@ import {
     Col,
     Row
 } from 'reactstrap';
-import { Heart } from 'react-feather';
+import { Save } from 'react-feather';
 import Background from '../background_image.jpg';
 
 class HorizontalCard extends React.Component {
@@ -28,7 +28,7 @@ class HorizontalCard extends React.Component {
                                 <CardTitle>
                                     <h4 className="ellips-title">{name}</h4>
                                 </CardTitle>
-                                <Heart className="heart-little-card" />
+                                <Save className="heart-little-card" />
                                 <Button className="horizontal-discover-btn">DISCOVER</Button>
                             </CardBody>
                         </Col>
