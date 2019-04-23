@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
+
 class DropDownButton extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,7 @@ class DropDownButton extends React.Component {
   render() {
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle caret>
+        <DropdownToggle className="btn-dropdown" caret>
           City
         </DropdownToggle>
         <DropdownMenu>

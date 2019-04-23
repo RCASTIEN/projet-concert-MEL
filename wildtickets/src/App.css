@@ -233,7 +233,7 @@ a:hover {
     }
 }
 
-/* Favorite*/
+/* Favorite */
 
 .scrolling-wrapper-flexbox {
     display: flex;
@@ -243,4 +243,25 @@ a:hover {
 
 .card {
     flex: 0 0 auto;
+}
+
+/* Dropdown */
+.btn-dropdown {
+    background-color: #fff;
+    color: #484848;
+}
+
+.btn-dropdown:hover {
+    background-color: #fff;
+    color: #484848;
+}
+
+.btn-secondary.dropdown-toggle :active {
+    background-color: #fff;
+    color: #484848;
+}
+
+.show > .btn-secondary.dropdown-toggle {
+    background-color: #fff !important;
+    color: #484848 !important;  
 }
