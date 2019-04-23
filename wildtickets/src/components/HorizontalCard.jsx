@@ -20,8 +20,8 @@ class HorizontalCard extends React.Component {
         return (
             <Col className="grid__item horizontalCard">
                 <Card>
-                <div className="img-container card-img-right">
-                    <CardImg className="oblique-img" style={{
+                <div className="img-container alignright">
+                    <CardImg className="obliqueVertical-img" style={{
                 backgroundImage: `url(${Background})`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
