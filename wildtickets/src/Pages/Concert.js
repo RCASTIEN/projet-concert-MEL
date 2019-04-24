@@ -1,27 +1,18 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../components/Header';
-import {
-    Container
-} from 'reactstrap';
+import '../styles/Concert.css';
 
-class Concert extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        }
-    }
-
+class Concerts extends Component {
     render() {
         return (
             <Fragment>
                 <Header />
-                <Container className="bg-to-delete">
-                    <h1>Concert</h1>
-                </Container>
+                <img className="oblique" src="https://images.sk-static.com/images/media/profile_images/artists/558710/huge_avatar" alt="" title="" />
+                <img className="cercle" src="https://images.sk-static.com/images/media/profile_images/artists/558710/huge_avatar" alt="" title="" />
+                <p className="text-center">Concert</p>
             </Fragment>
         );
-    }
-}
+    };
+};
 
-export default Concert;
+export default Concerts;
