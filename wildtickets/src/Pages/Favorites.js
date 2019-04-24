@@ -29,5 +29,6 @@ class Favorites extends Component {
            </Fragment>
        );
    }
+};
 
 export default Favorites;
