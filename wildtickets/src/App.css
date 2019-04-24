@@ -60,7 +60,7 @@ a:hover {
 }
 
 .container {
-    margin-top: 120px;
+    margin-top: 60px;
     max-width: 1020px;
 }
 
@@ -100,6 +100,12 @@ a:hover {
     font-size: 24px;
 }
 
+.filterButton {
+    height: 50px;
+    margin-top: -15px;
+    background-color: red !important;
+}
+
 .main-search-icon {
     z-index: 100;
     position: absolute;
@@ -124,9 +130,9 @@ a:hover {
     border: none;
 }
 
-.card {
+.verticalCard {
     border-radius: 1rem;
-    width: 14rem;
+    min-width: 14rem;
 }
 
 .card-title {
@@ -157,6 +163,38 @@ a:hover {
 .sub-title {
     font-size: 1.7rem;
     margin-bottom: 40px;
+}
+
+/* Card Horizontal - Home */
+
+.horizontal-discover-btn {
+    background-image: linear-gradient(to right, #FF9671, #FF6F91);
+    margin-left: 3rem;
+    border: none;
+}
+
+.horizontalCard {
+    border-radius: 1rem;
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto;
+    
+}
+
+.obliqueVertical-img {
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 10% 100%);
+    max-width: 100%;
+    height: 160px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    flex: 0 auto; 
+    float: right;
+}
+
+.horizontal-text-card-left {
+    float: left;
+    flex: 0 auto;
 }
 
 @media screen and (max-width: 1023px) {
@@ -214,7 +252,7 @@ a:hover {
     }
 }
 
-/* Favorite*/
+/* Favorite */
 
 .scrolling-wrapper-flexbox {
     display: flex;
@@ -224,4 +262,25 @@ a:hover {
 
 .card {
     flex: 0 0 auto;
+}
+
+/* Dropdown */
+.btn-dropdown {
+    background-color: #fff;
+    color: #484848;
+}
+
+.btn-dropdown:hover {
+    background-color: #fff;
+    color: #484848;
+}
+
+.btn-secondary.dropdown-toggle :active {
+    background-color: #fff;
+    color: #484848;
+}
+
+.show > .btn-secondary.dropdown-toggle {
+    background-color: #fff !important;
+    color: #484848 !important;  
 }
