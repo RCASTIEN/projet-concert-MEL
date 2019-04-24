@@ -33,20 +33,6 @@ button:focus {
     outline: 0;
 }
 
-/*.btn {
-    border-radius: 0.75;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-}
-s
-.sub-title {
-    font-size: 1.7rem;
-    margin-bottom: 40px;
-} */
-
 @media screen and (max-width: 1023px) {
     .container {
         margin-top: 60px;
