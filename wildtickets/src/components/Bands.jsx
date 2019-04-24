@@ -11,10 +11,6 @@ import { Heart } from 'react-feather';
 import Background from '../background_image.jpg';
 
 class Bands extends React.Component {
-    constructor(props) {
-        super(props)
-
-    }
     render() {
         const{name,avatar} = this.props;
         return (
@@ -22,11 +18,11 @@ class Bands extends React.Component {
                 <Card>
                 <div className="img-container">
                     <CardImg className="oblique-img" style={{
-                backgroundImage: `url(${Background})`,
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'
-                }} src={"https://images.sk-static.com/images/media/profile_images/artists/" + avatar + "/huge_avatar"} alt={avatar} />
+                        backgroundImage: `url(${Background})`,
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat'
+                        }} src={"https://images.sk-static.com/images/media/profile_images/artists/" + avatar + "/huge_avatar"} alt={avatar} />
                 </div>
                 <CardBody>
                     <CardTitle>

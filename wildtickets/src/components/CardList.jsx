@@ -8,13 +8,13 @@ class CardList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      eventArray: []
+      eventCard: []
     }
   }
   componentDidMount() {
     axios.get("https://api.songkick.com/api/3.0/metro_areas/28886/calendar.json?apikey=5yrQwIh2tGWNTggG").then(res => {
       this.setState({
-        eventArray: res.data.resultsPage.results.event
+        eventCard: res.data.resultsPage.results.event
       });
     });
   }
@@ -23,17 +23,17 @@ class CardList extends Component {
   
     return (
       <Container>
-          {this.state.eventArray.map((eachEvent, i) => {
-            return (eachEvent.performance[0]
+          {this.state.eventCard.map((eventCardLists, i) => {
+            return (eventCardLists.performance[0]
               &&
               <HorizontalCard
                 key={i}
-                name={eachEvent.performance[0].displayName}
-                avatar={eachEvent.performance[0].artist.id}
-                venue={eachEvent.venue.displayName}
-                date={eachEvent.start.date}
-                link={eachEvent.performance[0].artist.id}
-                fav={eachEvent.id}
+                name={eventCardLists.performance[0].displayName}
+                avatar={eventCardLists.performance[0].artist.id}
+                venue={eventCardLists.venue.displayName}
+                date={eventCardLists.start.date}
+                link={eventCardLists.performance[0].artist.id}
+                fav={eventCardLists.id}
 
               />
             )

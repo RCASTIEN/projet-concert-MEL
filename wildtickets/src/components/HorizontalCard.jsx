@@ -12,10 +12,6 @@ import { Save } from 'react-feather';
 import Background from '../background_image.jpg';
 
 class HorizontalCard extends React.Component {
-    constructor(props) {
-        super(props)
-
-    }
     render() {
         const { name, avatar } = this.props;
         return (

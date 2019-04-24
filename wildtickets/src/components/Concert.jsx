@@ -10,10 +10,6 @@ import {
 import { Heart } from 'react-feather';
 
 class Concert extends React.Component {
-    constructor(props) {
-        super(props)
-
-    }
     render() {
         return (
             <div>
