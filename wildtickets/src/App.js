@@ -60,7 +60,6 @@ class App extends Component {
             <h2 className="sub-title col-9">Nearby</h2>
             <DropDownButton />
           </Row>
-          <EventsList />
           <CardList />
           <Footer />
         </Container>
