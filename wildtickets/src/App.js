@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
+import './styles/Home.css';
 import {
   Row,
   Container,
@@ -16,7 +17,7 @@ import {  Search } from 'react-feather';
 import Header from './components/Header';
 import EventsList from './components/EventsList';
 import CardList from './components/CardList';
-import DropDownButton from './components/DropDownButton'
+import DropDownButton from './components/DropDownButton';
 
 class App extends Component {
   constructor(props) {
