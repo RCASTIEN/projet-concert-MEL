@@ -5,34 +5,27 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 * {
     font-family: 'Roboto Slab', serif;
     color: #383838;
 }
-
 a {
     color: #383838;
 }
-
 textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     border-color: rgba(253, 146, 115, 0.8);
     box-shadow: 0 1px 1px rgba(251, 125, 132, 0.075) inset, 0 0 8px rgba(251, 125, 132, 0.6);
     outline: 0 none;
 }
-
 .navbar-light .navbar-toggler {
     border-color: #fff;
 }
-
 .navbar-light {
     box-shadow: 0 0 6px 0px #d8d8d8;
 }
-
 button:focus {
     outline: 0;
 }
-
 @media screen and (max-width: 1023px) {
     .container {
         margin-top: 60px;
@@ -63,7 +56,6 @@ button:focus {
         white-space: normal;
     }
 }
-
 @media screen and (min-width: 1024px) {
     .grid-lg--scroll {
         white-space: nowrap;
@@ -87,15 +79,12 @@ button:focus {
         background: rgb(219, 219, 219);
     }
 }
-
 /* Favorite */
-
 .scrolling-wrapper-flexbox {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
 }
-
 .card {
     flex: 0 0 auto;
 }
