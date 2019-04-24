@@ -10,6 +10,7 @@ import {
 } from 'reactstrap';
 import { Save } from 'react-feather';
 import Background from '../background_image.jpg';
+import '../styles/HorizontalCard.css';
 
 class HorizontalCard extends React.Component {
     render() {

@@ -17,7 +17,7 @@ class MyTickets extends Component {
         return (
             <Fragment>
                 <Header />
-                <Container className="bg-to-delete">
+                <Container>
                     <h1>My tickets</h1>
                 </Container>
                 <Footer />

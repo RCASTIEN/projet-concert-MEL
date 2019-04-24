@@ -17,7 +17,7 @@ class Artist extends Component {
         return (
             <Fragment>
                 <Header />
-                <Container className="bg-to-delete">
+                <Container>
                     <h1>Artist</h1>
                 </Container>
                 <Footer />

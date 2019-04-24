@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <Container className="bg-to-delete">
+        <Container>
           <h1 className="main-title">Book unique concerts at the best prices.</h1>
           <Form className="search-bar-form">
             <InputGroup>

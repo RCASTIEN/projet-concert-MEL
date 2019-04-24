@@ -20,7 +20,7 @@ class Favorites extends Component {
        return (
            <Fragment>
                <Header />
-               <Container className="bg-to-delete">
+               <Container>
                    <FavoriteBandsList />
                    <FavoriteConcertList />
                    <LastConcertFavoriteBands />

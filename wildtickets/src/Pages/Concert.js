@@ -17,7 +17,7 @@ class Concert extends Component {
         return (
             <Fragment>
                 <Header />
-                <Container className="bg-to-delete">
+                <Container>
                     <h1>Concert</h1>
                 </Container>
                 <Footer/>
