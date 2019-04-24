@@ -5,16 +5,16 @@ import FavoriteConcertList from '../components/FavoriteConcertList';
 import FavoriteBandsList from '../components/FavoriteBandsList'
 import LastConcertFavoriteBands from '../components/LastConcertFavoriteBands';
 import {
-   Container
+    Container
 } from 'reactstrap';
 
 class Favorites extends Component {
-   constructor(props) {
-       super(props);
-       this.state = {
+    constructor(props) {
+        super(props);
+        this.state = {
 
-       }
-   }
+        }
+    }
 
    render() {
        return (
