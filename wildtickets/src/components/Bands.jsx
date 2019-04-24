@@ -9,10 +9,6 @@ import {
   } from 'reactstrap';
 
 class Bands extends React.Component {
-    constructor(props) {
-        super(props)
-
-    }
     render() {
         return (
             <Col className="grid__item">
