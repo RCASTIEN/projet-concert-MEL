@@ -9,10 +9,6 @@ import {
   } from 'reactstrap';
 
 class Concert extends React.Component {
-    constructor(props) {
-        super(props)
-
-    }
     render() {
         return (
             <div>
