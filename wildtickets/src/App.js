@@ -12,12 +12,11 @@ import {
 } from 'reactstrap';
 
 // Icons
-import {  Search } from 'react-feather';
+import { Search } from 'react-feather';
 
 import Header from './components/Header';
 import EventsList from './components/EventsList';
 import CardList from './components/CardList';
-import DropDownButton from './components/DropDownButton';
 
 class App extends Component {
   constructor(props) {
@@ -55,10 +54,6 @@ class App extends Component {
             <EventsList />
           </div>
           <br></br>
-          <Row>
-            <h2 className="sub-title col-9">Nearby</h2>
-            <DropDownButton />
-          </Row>
           <CardList />
         </Container>
       </Fragment>
