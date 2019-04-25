@@ -19,25 +19,46 @@ class CardList extends Component {
     });
   }
 
+  filterPlace() {
+    {
+      this.state.eventCard.filter((city) => {
+        switch (true) {
+          case (res.data.resultsPage.results.event.metroArea.displayName === "Paris"):
+            return ();
+          case (res.data.resultsPage.results.event.metroArea.displayName === "Lille"):
+            return ();
+          case (res.data.resultsPage.results.event.metroArea.displayName === "Marseille"):
+            return ();
+          case (res.data.resultsPage.results.event.metroArea.displayName === "Bordeaux"):
+            return ();
+          case (res.data.resultsPage.results.event.metroArea.displayName === "Lyon"):
+            return ();
+          case (res.data.resultsPage.results.event.metroArea.displayName === "Toulouse"):
+            return ();
+        }
+      })
+    }
+  }
+
   render() {
-  
+
     return (
       <Container>
-          {this.state.eventCard.map((eventCardLists, i) => {
-            return (eventCardLists.performance[0]
-              &&
-              <HorizontalCard
-                key={i}
-                name={eventCardLists.performance[0].displayName}
-                avatar={eventCardLists.performance[0].artist.id}
-                venue={eventCardLists.venue.displayName}
-                date={eventCardLists.start.date}
-                link={eventCardLists.performance[0].artist.id}
-                fav={eventCardLists.id}
+        {this.state.eventCard.map((eventCardLists, i) => {
+          return (eventCardLists.performance[0]
+            &&
+            <HorizontalCard
+              key={i}
+              name={eventCardLists.performance[0].displayName}
+              avatar={eventCardLists.performance[0].artist.id}
+              venue={eventCardLists.venue.displayName}
+              date={eventCardLists.start.date}
+              link={eventCardLists.performance[0].artist.id}
+              fav={eventCardLists.id}
 
-              />
-            )
-          })}
+            />
+          )
+        })}
       </Container>
     );
   }
