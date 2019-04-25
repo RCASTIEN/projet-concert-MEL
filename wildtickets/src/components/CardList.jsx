@@ -20,26 +20,6 @@ class CardList extends Component {
     });
   }
 
-  filterPlace() {
-    {
-      this.state.eventCard.filter((city) => {
-        switch (true) {
-          case (res.data.resultsPage.results.event.metroArea.displayName === "Paris"):
-            return ();
-          case (res.data.resultsPage.results.event.metroArea.displayName === "Lille"):
-            return ();
-          case (res.data.resultsPage.results.event.metroArea.displayName === "Marseille"):
-            return ();
-          case (res.data.resultsPage.results.event.metroArea.displayName === "Bordeaux"):
-            return ();
-          case (res.data.resultsPage.results.event.metroArea.displayName === "Lyon"):
-            return ();
-          case (res.data.resultsPage.results.event.metroArea.displayName === "Toulouse"):
-            return ();
-        }
-      })
-    }
-  }
 
   render() {
 
