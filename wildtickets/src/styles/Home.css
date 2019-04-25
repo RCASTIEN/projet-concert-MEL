@@ -2,14 +2,6 @@
     background-color: #fff !important;
 }
 
-.gradient-logo {
-    background: linear-gradient(to right, #FF9671, #FF6F91);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    font-size: 28px;
-}
-
 nav a {
     font-weight: 700;
     padding: 0 20px;
@@ -23,11 +15,6 @@ a:hover {
 .container {
     margin-top: 60px;
     max-width: 1020px;
-}
-
-.bg-to-delete {
-    background-color: #fff;
-    height: 1800px;
 }
 
 .main-title {

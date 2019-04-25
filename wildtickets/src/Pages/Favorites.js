@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import FavoriteConcertList from '../components/FavoriteConcertList';
 import FavoriteBandsList from '../components/FavoriteBandsList'
 import LastConcertFavoriteBands from '../components/LastConcertFavoriteBands';
@@ -15,18 +16,19 @@ class Favorites extends Component {
         }
     }
 
-    render() {
-        return (
-            <Fragment>
-                <Header />
-                <Container className="bg-to-delete">
-                    <LastConcertFavoriteBands />
-                    <FavoriteBandsList />
-                    <FavoriteConcertList />
-                </Container>
-            </Fragment>
-        );
-    }
-}
+   render() {
+       return (
+           <Fragment>
+               <Header />
+               <Container>
+                   <FavoriteBandsList />
+                   <FavoriteConcertList />
+                   <LastConcertFavoriteBands />
+               </Container>
+               <Footer />
+           </Fragment>
+       );
+   }
+};
 
 export default Favorites;

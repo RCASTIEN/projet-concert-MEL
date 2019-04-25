@@ -12,9 +12,10 @@ import {
 } from 'reactstrap';
 
 // Icons
-import {  Search } from 'react-feather';
+import { Search } from 'react-feather';
 
 import Header from './components/Header';
+import Footer from './components/Footer'
 import EventsList from './components/EventsList';
 import CardList from './components/CardList';
 import DropDownButton from './components/DropDownButton';
@@ -39,7 +40,7 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <Container className="bg-to-delete">
+        <Container>
           <h1 className="main-title">Book unique concerts at the best prices.</h1>
           <Form className="search-bar-form">
             <InputGroup>
@@ -60,6 +61,7 @@ class App extends Component {
             <DropDownButton />
           </Row>
           <CardList />
+          <Footer />
         </Container>
       </Fragment>
     );
