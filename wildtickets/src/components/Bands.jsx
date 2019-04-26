@@ -9,6 +9,7 @@ import {
 } from 'reactstrap';
 import { Heart } from 'react-feather';
 import "../styles/Heart.css"
+import Background from '../background_image.jpg';
 
 
 class Bands extends React.Component {
