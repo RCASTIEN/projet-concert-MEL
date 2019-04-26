@@ -26,7 +26,6 @@ class DropDownButton extends React.Component {
       this.props.filterPlace(this.state.value)
     }
     )
-    // { value: event.target.value })
   }
   render() {
     return (
