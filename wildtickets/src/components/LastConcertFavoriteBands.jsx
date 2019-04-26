@@ -4,10 +4,6 @@ import { Row } from 'reactstrap';
 import Container from 'reactstrap/lib/Container';
 
 class LastConcertFavoriteBands extends React.Component {
-    constructor(props) {
-        super(props)
-
-    }
     render() {
         return (
             <Fragment>
