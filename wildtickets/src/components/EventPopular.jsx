@@ -13,21 +13,25 @@ class EventPopular extends Component {
     }
     componentDidMount() {
         axios.get("https://api.songkick.com/api/3.0/metro_areas/28886/calendar.json?apikey=5yrQwIh2tGWNTggG").then(res => {
-            this.setState({
-                eventPopulars: res.data.resultsPage.results.event,
+            const mySortedEvents = res.data.resultsPage.results.event.sort((evtA, evtB)=>{
+                if(evtA.popularity > evtB.popularity) {
+                    return -1;
+                } else {
+                    return 1;
+                }
             });
-            console.log(this.state.eventPopulars[0].popularity)
+
+            this.setState({
+                eventPopulars: mySortedEvents,
+            });
         });
     }
 
     render() {
-        this.state.eventPopulars.sort()
-        const orderEventPopulars= this.state.eventPopulars.reverse();
-
         return (
             <Container>
                 <Row className='scrolling-wrapper-flexbox grid'>
-                    {orderEventPopulars.map((eachPopular, i) => {
+                    {this.state.eventPopulars.map((eachPopular, i) => {
                         return (eachPopular.performance[0]
                             &&
                             <Popular
@@ -38,7 +42,6 @@ class EventPopular extends Component {
                                 date={eachPopular.start.date}
                                 popularity={eachPopular.uri.popularity}
                                 fav={eachPopular.id}
-
                             />
                         );
                     })}
