@@ -9,7 +9,7 @@ import {
     Row
 } from 'reactstrap';
 import { Save } from 'react-feather';
-import Background from '../background_image.jpg';
+import Background from '../images/background_image.jpg';
 
 class HorizontalCard extends React.Component {
     render() {

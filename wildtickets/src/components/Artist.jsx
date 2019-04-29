@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import Background from '../background_image.jpg';
+import Background from '../images/background_image.jpg';
 
 const formatDate = (paramDate) => {
     let setDate = paramDate;

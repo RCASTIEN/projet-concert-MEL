@@ -8,7 +8,7 @@ import {
     Col
   } from 'reactstrap';
 import { Heart } from 'react-feather';
-import Background from '../background_image.jpg';
+import Background from '../images/background_image.jpg';
 
 class Popular extends React.Component {
     render() {
