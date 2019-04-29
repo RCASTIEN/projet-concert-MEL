@@ -145,3 +145,8 @@ a:hover {
     background-color: #fff !important;
     color: #484848 !important;  
 }
+
+.filter-button {
+    background-image: linear-gradient(to right, #FF9671, #FF6F91);
+    border: none;
+}
