@@ -10,13 +10,15 @@ import {
 import { Heart } from 'react-feather';
 import "../styles/Heart.css"
 import Background from '../background_image.jpg';
+import axios from 'axios';
 
 
 class Bands extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            addToFavorite: false,
+            favorited: false,
+            id: ""
         }
         this.handleAddToFavorite = this.handleAddToFavorite.bind(this);
     }
@@ -24,9 +26,21 @@ class Bands extends React.Component {
     handleAddToFavorite(e) {
         e.preventDefault();
         this.setState({
-            addToFavorite: !this.state.addToFavorite,
+            favorited: !this.state.favorited,
         }, () => {
-            this.props.alertFunction(this.state.addToFavorite ? "This band was added to your favorites !" : "This band was removed from your favorite.");
+            this.props.alertFunction(this.state.favorited ? "This band was added to your favorites !" : "This band was removed from your favorite.");
+            if (this.state.favorited) {
+                axios.post("http://localhost:5050/favorites", { band_id: this.props.fav });
+            } else {
+                const idEvent = this.props.fav;
+                axios.get("http://localhost:5050/favorites?band_id=" + idEvent)
+                    .then(res => {
+                        this.setState({
+                            id: res.data[0].id
+                        }, () => {axios.delete("http://localhost:5050/favorites/" + this.state.id)}
+                        )
+                    })
+            }
         }
         );
 
@@ -50,7 +64,7 @@ class Bands extends React.Component {
                             <CardTitle>
                                 <h4 className="ellips-title">{name}</h4>
                             </CardTitle>
-                            <Heart onClick={this.handleAddToFavorite} className={this.state.addToFavorite ? "heart-filled" : "heart-little-card"} />
+                            <Heart onClick={this.handleAddToFavorite} className={this.state.favorited ? "heart-filled" : "heart-little-card"} />
                             <Button className="discover-btn">DISCOVER</Button>
                         </CardBody>
                     </Card>
