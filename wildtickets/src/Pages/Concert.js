@@ -3,6 +3,18 @@ import Header from "../components/Header";
 import Frame from "iframe-react";
 import axios from "axios";
 import "../styles/Concert.css";
+import Footer from '../components/Footer';
+import {
+    Container
+} from 'reactstrap';
+
+class Concert extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
 
 class Concerts extends Component {
   constructor(props) {
