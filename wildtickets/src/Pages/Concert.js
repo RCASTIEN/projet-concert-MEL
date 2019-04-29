@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../components/Header';
+import '../styles/Concert.css';
 import Footer from '../components/Footer';
 import {
     Container
@@ -13,17 +14,17 @@ class Concert extends Component {
         }
     }
 
+class Concerts extends Component {
     render() {
         return (
             <Fragment>
                 <Header />
-                <Container>
-                    <h1>Concert</h1>
-                </Container>
-                <Footer/>
+                <img className="oblique" src="https://images.sk-static.com/images/media/profile_images/artists/558710/huge_avatar" alt="" title="" />
+                <img className="cercle" src="https://images.sk-static.com/images/media/profile_images/artists/558710/huge_avatar" alt="" title="" />
+                <p className="text-center">Concert</p>
             </Fragment>
         );
-    }
-}
+    };
+};
 
-export default Concert;
+export default Concerts;
