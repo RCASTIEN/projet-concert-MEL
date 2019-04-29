@@ -6,33 +6,35 @@ import {
     CardBody,
     CardTitle,
     Col
-  } from 'reactstrap';
+} from 'reactstrap';
 import { Heart } from 'react-feather';
 import Background from '../background_image.jpg';
 
 class Bands extends React.Component {
     render() {
-        const{name,avatar} = this.props;
+        const { name, avatar, fav } = this.props;
         return (
             <Col className="grid__item verticalCard">
                 <Card>
-                <div className="img-container">
-                    <CardImg className="oblique-img" style={{
-                        backgroundImage: `url(${Background})`,
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat'
+                    <div className="img-container">
+                        <CardImg className="oblique-img" style={{
+                            backgroundImage: `url(${Background})`,
+                            backgroundPosition: 'center',
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat'
                         }} src={"https://images.sk-static.com/images/media/profile_images/artists/" + avatar + "/huge_avatar"} alt={avatar} />
-                </div>
-                <CardBody>
-                    <CardTitle>
-                        <h4 className="ellips-title">{name}</h4>
-                    </CardTitle>
-                    <Heart className="heart-little-card" />
-                    <Button className="discover-btn">DISCOVER</Button>
-                </CardBody>
+                    </div>
+                    <CardBody>
+                        <CardTitle>
+                            <h4 className="ellips-title">{name}</h4>
+                        </CardTitle>
+                        <Heart className="heart-little-card" />
+                        <a href={`/artist/${fav}`}>
+                            <Button className="discover-btn"> DISCOVER</Button>
+                        </a>
+                    </CardBody>
                 </Card>
-            </Col>
+            </Col >
         )
     }
 };
