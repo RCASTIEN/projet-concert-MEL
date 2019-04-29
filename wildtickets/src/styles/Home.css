@@ -149,4 +149,9 @@ a:hover {
 .filter-button {
     background-image: linear-gradient(to right, #FF9671, #FF6F91);
     border: none;
+    width: 100px;
+}
+.button-lign{
+    display: flex;
+    justify-content: space-around;
 }

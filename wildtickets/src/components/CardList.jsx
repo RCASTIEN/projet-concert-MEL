@@ -38,24 +38,26 @@ class CardList extends Component {
           <Col>
             <h2 className="sub-title">Nearby</h2>
           </Col>
-          <Col>
-            <Button className="filter-button" onClick={() => { this.filterPlace(28886) }}>Lille</Button>
-          </Col>
-          <Col>
-            <Button className="filter-button" onClick={() => { this.filterPlace(28909) }}>Paris</Button>
-          </Col>
-          <Col>
-            <Button className="filter-button" onClick={() => { this.filterPlace(28889) }}>Lyon</Button>
-          </Col>
-          <Col>
-            <Button className="filter-button" onClick={() => { this.filterPlace(156979) }}>Marseille</Button>
-          </Col>
-          <Col>
-            <Button className="filter-button" onClick={() => { this.filterPlace(28851) }}>Bordeaux</Button>
-          </Col>
-          <Col>
-            <Button className="filter-button" onClick={() => { this.filterPlace(28930) }}>Toulouse</Button>
-          </Col>
+          <div className="button-lign">
+            <Col>
+              <Button className="filter-button" onClick={() => { this.filterPlace(28886) }}>Lille</Button>
+            </Col>
+            <Col>
+              <Button className="filter-button" onClick={() => { this.filterPlace(28909) }}>Paris</Button>
+            </Col>
+            <Col>
+              <Button className="filter-button" onClick={() => { this.filterPlace(28889) }}>Lyon</Button>
+            </Col>
+            <Col>
+              <Button className="filter-button" onClick={() => { this.filterPlace(156979) }}>Marseille</Button>
+            </Col>
+            <Col>
+              <Button className="filter-button" onClick={() => { this.filterPlace(28851) }}>Bordeaux</Button>
+            </Col>
+            <Col>
+              <Button className="filter-button" onClick={() => { this.filterPlace(28930) }}>Toulouse</Button>
+            </Col>
+          </div>
         </Row>
         <Container>
           {this.state.eventCard.map((eventCardLists, i) => {
