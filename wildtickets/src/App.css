@@ -23,6 +23,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 .navbar-light {
     box-shadow: 0 0 6px 0px #d8d8d8;
 }
+
 button:focus {
     outline: 0;
 }
