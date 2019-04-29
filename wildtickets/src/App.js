@@ -16,7 +16,6 @@ import { Search } from 'react-feather';
 import Header from './components/Header';
 import Footer from './components/Footer'
 import CardList from './components/CardList';
-import DropDownButton from './components/DropDownButton';
 import EventPopular from './components/EventPopular';
 
 class App extends Component {
