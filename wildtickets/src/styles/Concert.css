@@ -1,16 +1,10 @@
-p {
-    color: #383838;
-    margin-top: 40vw;
-    font-size: 7vw;
-}
-
 .cercle {
     clip-path: circle(50%);
     width: 32vw;
     margin-top: 2vw;
     margin-left: 50%;
     transform:translateX(-50%);
-    position: absolute;
+    position: relative;
 }
 
 .oblique {
