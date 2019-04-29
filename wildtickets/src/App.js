@@ -16,9 +16,9 @@ import { Search } from 'react-feather';
 
 import Header from './components/Header';
 import Footer from './components/Footer'
-import EventsList from './components/EventsList';
 import CardList from './components/CardList';
 import DropDownButton from './components/DropDownButton';
+import EventPopular from './components/EventPopular';
 
 class App extends Component {
   constructor(props) {
@@ -53,7 +53,7 @@ class App extends Component {
           </Form>
           <div className="mb-5">
             <h2 className="sub-title mb-auto">Popular Artists</h2>
-            <EventsList />
+            <EventPopular />
           </div>
           <br></br>
           <Row>
