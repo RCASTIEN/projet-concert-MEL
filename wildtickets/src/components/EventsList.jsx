@@ -43,7 +43,7 @@ class EventsList extends Component {
       <Fragment>
         {
           this.state.alert &&
-          <div class="alert alert-danger" role="alert">
+          <div className="alert alert-danger" role="alert">
             {this.state.message}
           </div>
         }
