@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import './App.css';
 import './styles/Home.css';
 import {
-  Row,
   Container,
   Form,
   Input,
@@ -56,10 +55,6 @@ class App extends Component {
             <EventPopular />
           </div>
           <br></br>
-          <Row>
-            <h2 className="sub-title col-9">Nearby</h2>
-            <DropDownButton />
-          </Row>
           <CardList />
           <Footer />
         </Container>
