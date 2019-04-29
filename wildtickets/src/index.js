@@ -20,8 +20,8 @@ const Root = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path='/' component={App} />
-            <Route path='/concert' component={Concert} />
-            <Route path='/artist' component={Artist} />
+            <Route path='/concert/:concertId' component={Concert} />
+            <Route path='/artist/:artistId' component={Artist} />
             <Route path='/mytickets' component={MyTickets} />
             <Route path='/favorites' component={Favorites} />
             <Route component={NotFound} />
