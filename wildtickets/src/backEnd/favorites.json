@@ -31,7 +31,36 @@
     {
       "band_id": 37677129,
       "id": 8
+    },
+    {
+      "band_id": 36462764,
+      "id": 9
+    },
+    {
+      "band_id": 37367974,
+      "id": 10
     }
   ],
-  "concerts": []
+  "concerts": [
+    {
+      "concert_id": 37677129,
+      "id": 2
+    },
+    {
+      "concert_id": 36462764,
+      "id": 4
+    },
+    {
+      "concert_id": 35490254,
+      "id": 5
+    },
+    {
+      "concert_id": 36186849,
+      "id": 6
+    },
+    {
+      "concert_id": 37065499,
+      "id": 7
+    }
+  ]
 }

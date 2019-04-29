@@ -37,25 +37,31 @@ class CardList extends Component {
   }
 
   render() {
-  
+
     return (
       <Container>
-          {this.state.eventCard.map((eventCardLists, i) => {
-            return (eventCardLists.performance[0]
-              &&
-              <HorizontalCard
-                key={i}
-                name={eventCardLists.performance[0].displayName}
-                avatar={eventCardLists.performance[0].artist.id}
-                venue={eventCardLists.venue.displayName}
-                date={eventCardLists.start.date}
-                link={eventCardLists.performance[0].artist.id}
-                fav={eventCardLists.id}
-                alertFunction={this.handleAlert}
+        {
+          this.state.alert &&
+          <div className="alert alert-danger" role="alert">
+            {this.state.message}
+          </div>
+        }
+        {this.state.eventCard.map((eventCardLists, i) => {
+          return (eventCardLists.performance[0]
+            &&
+            <HorizontalCard
+              key={i}
+              name={eventCardLists.performance[0].displayName}
+              avatar={eventCardLists.performance[0].artist.id}
+              venue={eventCardLists.venue.displayName}
+              date={eventCardLists.start.date}
+              link={eventCardLists.performance[0].artist.id}
+              fav={eventCardLists.id}
+              alertFunction={this.handleAlert}
 
-              />
-            )
-          })}
+            />
+          )
+        })}
       </Container>
     );
   }
