@@ -8,8 +8,25 @@ class CardList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      eventCard: []
+      eventCard: [],
+      alert: false,
+      message: undefined
     }
+    this.handleAlert = this.handleAlert.bind(this)
+  }
+
+  handleAlert(msg) {
+    this.setState({
+      alert: true,
+      message: msg
+    });
+
+    setTimeout(() => {
+      this.setState({
+        alert: false,
+        message: undefined
+      });
+    }, 3000);
   }
   componentDidMount() {
     axios.get("https://api.songkick.com/api/3.0/metro_areas/28886/calendar.json?apikey=5yrQwIh2tGWNTggG").then(res => {
@@ -34,6 +51,7 @@ class CardList extends Component {
                 date={eventCardLists.start.date}
                 link={eventCardLists.performance[0].artist.id}
                 fav={eventCardLists.id}
+                alertFunction={this.handleAlert}
 
               />
             )

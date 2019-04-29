@@ -33,7 +33,6 @@ class FavoriteBandsList extends React.Component {
     }
     
     render() {
-        console.log(this.state.favoritesArray);
         return (
             <Fragment>
                 <Container>

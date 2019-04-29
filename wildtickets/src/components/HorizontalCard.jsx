@@ -10,8 +10,41 @@ import {
 } from 'reactstrap';
 import { Save } from 'react-feather';
 import Background from '../background_image.jpg';
+import axios from 'axios';
 
 class HorizontalCard extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            favorited: false,
+            id: ""
+        }
+        this.handleAddToFavorite = this.handleAddToFavorite.bind(this);
+    }
+
+    handleAddToFavorite(e) {
+        e.preventDefault();
+        this.setState({
+            favorited: !this.state.favorited,
+        }, () => {
+            this.props.alertFunction(this.state.favorited ? "This concert was added to your favorites !" : "This concert was removed from your favorite.");
+            if (this.state.favorited) {
+                axios.post("http://localhost:5050/concerts", { concert_id: this.props.fav });
+            } else {
+                const idEvent = this.props.fav;
+                axios.get("http://localhost:5050/concerts?concert_id=" + idEvent)
+                    .then(res => {
+                        this.setState({
+                            id: res.data[0].id
+                        }, () => { axios.delete("http://localhost:5050/concerts/" + this.state.id) }
+                        )
+                    })
+            }
+        }
+        );
+
+    }
     render() {
         const { name, avatar } = this.props;
         return (
@@ -24,7 +57,7 @@ class HorizontalCard extends React.Component {
                                 <CardTitle>
                                     <h4 className="ellips-title">{name}</h4>
                                 </CardTitle>
-                                <Save className="heart-little-card" />
+                                <Save onClick={this.handleAddToFavorite} className={this.state.favorited ? "heart-filled" : "heart-little-card"}/>
                                 <Button className="horizontal-discover-btn">DISCOVER</Button>
                             </CardBody>
                         </Col>
