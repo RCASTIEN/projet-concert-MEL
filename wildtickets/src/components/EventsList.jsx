@@ -33,7 +33,6 @@ class EventsList extends Component {
                 avatar={eachEvent.performance[0].artist.id}
                 venue={eachEvent.venue.displayName}
                 date={eachEvent.start.date}
-                link={eachEvent.performance[0].artist.id}
                 fav={eachEvent.id}
 
               />

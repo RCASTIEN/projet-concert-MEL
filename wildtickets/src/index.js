@@ -10,6 +10,8 @@ import Concert from './Pages/Concert';
 import Artist from './Pages/Artist';
 import MyTickets from './Pages/MyTickets';
 import Favorites from './Pages/Favorites';
+import TermsOfUse from './Pages/TermsOfUse';
+import Sitemap from './Pages/Sitemap';
 import NotFound from './Pages/NotFound';
 
 // Router 
@@ -20,10 +22,12 @@ const Root = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path='/' component={App} />
-            <Route path='/concert' component={Concert} />
-            <Route path='/artist' component={Artist} />
+            <Route path='/concert/:concertId' component={Concert} />
+            <Route path='/artist/:artistId' component={Artist} />
             <Route path='/mytickets' component={MyTickets} />
             <Route path='/favorites' component={Favorites} />
+            <Route path='/termsofuse' component={TermsOfUse} />
+            <Route path='/sitemap' component={Sitemap} />
             <Route component={NotFound} />
         </Switch>
     </BrowserRouter>
