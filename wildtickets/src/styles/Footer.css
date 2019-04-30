@@ -1,5 +1,6 @@
 .footer {
     box-shadow: 0 0 6px 0px #999999;
+    background-image: linear-gradient(to right, rgb(247, 184, 159), rgb(247, 187, 201));
 }
 
 .feather:hover {
