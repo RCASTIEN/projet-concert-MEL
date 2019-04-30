@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 
 // Icons
-import { Save, Heart } from 'react-feather';
+import { Save, Heart, Music } from 'react-feather';
 
 import Header from './components/Header';
 import Footer from './components/Footer'
@@ -47,13 +47,15 @@ class App extends Component {
                   <Card className="cardThree">
                     <CardText className="textColumn">Discover popular artist and concerts near you !
   Pick an artist or a date that you like and have a wonderful evening.
-                  </CardText>
+                    </CardText>
+                    <Music className="disk-card" />
                   </Card>
                 </Col>
                 <Col>
                   <Card className="cardThree">
                     <CardText className="textColumn">Put a like on the artist you prefer
-and follow his tours on the "Favorites" tab to  never miss any concert near you.</CardText>
+and follow his tours on the "Favorites" tab to  never miss any concert near you.
+                    </CardText>
                     <Heart className="disk-card" />
                   </Card>
                 </Col>
@@ -62,7 +64,7 @@ and follow his tours on the "Favorites" tab to  never miss any concert near you.
                     <CardText className="textColumn">Save the date of a concert that you like
   so you don't forget it and organize your outings. Go to the "Favorite" tab to find opportunities for a good time.
                   </CardText>
-                    <Save className="disk-card" />
+                  <Save className="disk-card" />
                   </Card>
                 </Col>
               </Row>

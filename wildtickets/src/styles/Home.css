@@ -29,13 +29,12 @@ a:hover {
     align-items: stretch;
     box-shadow: 0 0 6px 0px #999999;
     background-image: linear-gradient(to right, rgb(247, 184, 159), rgb(247, 187, 201));
-    height: 230px;
+    height: 100%;
     padding: 5%;
     border-radius: 5%;
 }
 .textColumn{
     height: 150px;
-    text-align: justify;
 }
 .disk-card{
     width: 100%;
