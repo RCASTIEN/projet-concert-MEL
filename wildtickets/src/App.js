@@ -39,7 +39,7 @@ class App extends Component {
       <Fragment>
         <Header />
         <Container>
-          <h1 className="main-title">Book unique concerts at the best prices.</h1>
+          <h1 className="main-title">Book unique concerts at the best places.</h1>
           <Form className="search-bar-form">
             <Col>
               <Row className="cardIntro">
