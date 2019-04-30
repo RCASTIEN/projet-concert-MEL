@@ -4,9 +4,6 @@ import Frame from "iframe-react";
 import axios from "axios";
 import "../styles/Concert.css";
 import Footer from '../components/Footer';
-import {
-    Container
-} from 'reactstrap';
 
 class Concerts extends Component {
   constructor(props) {
@@ -96,6 +93,7 @@ class Concerts extends Component {
             />
           </Frame>
         </div>
+        <Footer />
       </Fragment>
     );
   }
