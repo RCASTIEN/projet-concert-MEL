@@ -45,32 +45,32 @@ class App extends Component {
         <Container>
           <h1 className="main-title">Book unique concerts at the best prices.</h1>
           <Form className="search-bar-form">
-          <Col>
-            <Row>
-              <Col>
-                <Card className="cardThree">
-                  <CardText className="textColumn">Discover popular artist and concerts near you !
-Pick an artist or a date that you like and have a wonderful evening.
+            <Col>
+              <Row>
+                <Col>
+                  <Card className="cardThree">
+                    <CardText className="textColumn">Discover popular artist and concerts near you !
+  Pick an artist or a date that you like and have a wonderful evening.
                   </CardText>
-                  <Save className="disk-card" />
-                </Card>
-              </Col>
-              <Col>
-                <Card className="cardThree">
-                  <CardText className="textColumn">Put a like on the artist you prefer
+                  </Card>
+                </Col>
+                <Col>
+                  <Card className="cardThree">
+                    <CardText className="textColumn">Put a like on the artist you prefer
 and follow his tours on the "Favorites" tab to  never miss any concert near you.</CardText>
-                </Card>
-              </Col>
-              <Col>
-                <Card className="cardThree">
-                  <CardText className="textColumn">Save the date of a concert that you like
-so you don't forget it and organize your outings. Go to the "Favorite" tab to find opportunities for a good time.
+                    <Heart className="disk-card" />
+                  </Card>
+                </Col>
+                <Col>
+                  <Card className="cardThree">
+                    <CardText className="textColumn">Save the date of a concert that you like
+  so you don't forget it and organize your outings. Go to the "Favorite" tab to find opportunities for a good time.
                   </CardText>
-                  <Heart className="disk-card" />
-                </Card>
-              </Col>
-            </Row>
-          </Col>
+                    <Save className="disk-card" />
+                  </Card>
+                </Col>
+              </Row>
+            </Col>
             <InputGroup>
               <InputGroupAddon addonType="prepend" className="main-search-icon"><Search /></InputGroupAddon>
               <Input className="search-bar" placeholder="Search by place, artist, genre..." />
