@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import BackToTop from './BackToTop';
 import {
     Collapse,
     Navbar,
@@ -37,6 +38,7 @@ class Header extends Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
+                <BackToTop />
             </Fragment>
         );
     }

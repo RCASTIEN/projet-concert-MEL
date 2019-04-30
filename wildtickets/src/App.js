@@ -14,9 +14,10 @@ import { Music, Save, Heart } from 'react-feather';
 import Header from './components/Header';
 import Footer from './components/Footer'
 import CardList from './components/CardList';
-import EventPopular from './components/EventPopular';
 import CardText from 'reactstrap/lib/CardText';
 import Row from 'reactstrap/lib/Row';
+import EventsList from './components/EventsList';
+
 
 class App extends Component {
   constructor(props) {
@@ -66,7 +67,7 @@ so you don't forget it and organize your outings. Go to the "Favorite" tab to fi
           </Form>
           <div className="mb-5">
             <h2 className="sub-title mb-auto">Popular Artists</h2>
-            <EventPopular />
+            <EventsList />
           </div>
           <br></br>
           <CardList />

@@ -24,6 +24,7 @@ a:hover {
     max-width: 520px;
     font-size: 3rem;
 }
+
 .cardThree{
     display: flex;
     align-items: stretch;
@@ -44,6 +45,7 @@ a:hover {
     align-content: center;
     margin-top: 45px;
 }
+
 .search-bar-form {
     margin: 40px 0 140px;
 }
@@ -188,4 +190,3 @@ a:hover {
 
 .cardIntro {
     margin-right: -300px;
-}

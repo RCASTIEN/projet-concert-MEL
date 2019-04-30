@@ -1,0 +1,27 @@
+#btt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(253, 146, 115, 0.8);
+  border: 0;
+  z-index: 1000;
+  color: white;clip-path: polygon(29% 49%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 50% 30%);
+}
+
+#btt:hover {
+  background: rgba(255, 111, 145, 0.8);
+}
+
+@media screen and (min-width: 1024px) {
+  #btt {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #btt {
+    width: 100px;
+    height: 100px;
+  }
+}
