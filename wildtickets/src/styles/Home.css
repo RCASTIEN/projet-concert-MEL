@@ -36,11 +36,13 @@ a:hover {
 .textColumn{
     height: 150px;
     text-align: justify;
+    margin-top: -30px;
 }
 .disk-card{
     width: 100%;
     display: flex;
     align-content: center;
+    margin-top: 45px;
 }
 .search-bar-form {
     margin: 40px 0 140px;
@@ -169,7 +171,21 @@ a:hover {
     border: none;
     width: 100px;
 }
+
 .button-lign{
     display: flex;
     justify-content: space-around;
+}
+
+.cardThree {
+    border-radius: 1rem;
+    width: 300px;
+    display: flex;
+    margin: 10% auto;  
+    height: 335px;
+    margin-left: -10px;
+}
+
+.cardIntro {
+    margin-right: -300px;
 }
