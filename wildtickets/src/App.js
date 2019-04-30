@@ -4,16 +4,12 @@ import './styles/Home.css';
 import {
   Container,
   Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  Button,
   Col,
   Card,
 } from 'reactstrap';
 
 // Icons
-import { Search, Save, Heart } from 'react-feather';
+import { Save, Heart } from 'react-feather';
 
 import Header from './components/Header';
 import Footer from './components/Footer'
@@ -71,13 +67,6 @@ and follow his tours on the "Favorites" tab to  never miss any concert near you.
                 </Col>
               </Row>
             </Col>
-            <InputGroup>
-              <InputGroupAddon addonType="prepend" className="main-search-icon"><Search /></InputGroupAddon>
-              <Input className="search-bar" placeholder="Search by place, artist, genre..." />
-              <InputGroupAddon addonType="append">
-                <Button className="search-bar-btn" color="primary">Search</Button>
-              </InputGroupAddon>
-            </InputGroup>
           </Form>
           <div className="mb-5">
             <h2 className="sub-title mb-auto">Popular Artists</h2>
