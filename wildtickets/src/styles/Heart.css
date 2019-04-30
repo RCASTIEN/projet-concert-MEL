@@ -1,0 +1,10 @@
+.heart-little-card {
+    color: #484848;
+    margin-top: 6px;
+}
+
+.heart-filled {
+    margin-top: 6px;
+    color: #ff1c55 !important;
+    fill: currentColor;    
+}

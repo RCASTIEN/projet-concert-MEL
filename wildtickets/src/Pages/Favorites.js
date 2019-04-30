@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FavoriteConcertList from '../components/FavoriteConcertList';
 import FavoriteBandsList from '../components/FavoriteBandsList'
-import LastConcertFavoriteBands from '../components/LastConcertFavoriteBands';
 import {
     Container
 } from 'reactstrap';
@@ -16,19 +15,17 @@ class Favorites extends Component {
         }
     }
 
-   render() {
-       return (
-           <Fragment>
-               <Header />
-               <Container>
-                   <FavoriteBandsList />
-                   <FavoriteConcertList />
-                   <LastConcertFavoriteBands />
-               </Container>
-               <Footer />
-           </Fragment>
-       );
-   }
-};
+    render() {
+        return (
+            <Fragment>
+                <Header />
+                <Container className="bg-to-delete">
+                    <FavoriteBandsList />
+                    <FavoriteConcertList />
+                </Container>
+            </Fragment>
+        );
+    }
+}
 
 export default Favorites;
