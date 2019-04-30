@@ -1,6 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../components/Header';
 import '../styles/Concert.css';
+import Footer from '../components/Footer';
+import {
+    Container
+} from 'reactstrap';
+
 
 class Concerts extends Component {
     render() {

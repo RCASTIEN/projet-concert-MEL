@@ -1,7 +1,12 @@
+
 import React, { Component, Fragment } from "react";
 import Header from "../components/Header";
 import axios from "axios";
 import "../styles/Artist.css";
+import {
+    Container
+} from 'reactstrap';
+import Footer from '../components/Footer';
 
 class Artists extends Component {
   constructor(props) {
