@@ -13,7 +13,7 @@ import Background from '../background_image.jpg';
 
 class HorizontalCard extends React.Component {
     render() {
-        const { name, avatar } = this.props;
+        const { name, avatar, fav } = this.props;
         return (
 
             <div className="grid__item horizontalCard">
@@ -25,7 +25,9 @@ class HorizontalCard extends React.Component {
                                     <h4 className="ellips-title">{name}</h4>
                                 </CardTitle>
                                 <Save className="heart-little-card" />
+                                <a href={`/concert/${fav}`}>
                                 <Button className="horizontal-discover-btn">DISCOVER</Button>
+                                </a>
                             </CardBody>
                         </Col>
                         <Col>
