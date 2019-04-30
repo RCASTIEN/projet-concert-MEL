@@ -17,7 +17,7 @@ const formatDate = (paramDate) => {
     setDate = setDate.replace(regex, '');
     regex = /-/g;
     return setDate = setDate.replace(regex, '/');
-  }
+}
 
 class HorizontalCard extends React.Component {
     render() {
@@ -25,13 +25,13 @@ class HorizontalCard extends React.Component {
         return (
 
             <div className="grid__item horizontalCard">
-                <Card>
-                    <Row>
+                <Row>
+                    <Card>
                         <Col>
                             <CardBody className="horizontal-text-card-left">
                                 <CardTitle>
                                     <h4 className="ellips-title">{name}</h4>
-                                        <p class="text-muted">{venue}-{formatDate(date)}</p>
+                                    <p className="text-muted">{venue}-{formatDate(date)}</p>
                                 </CardTitle>
                                 <Save className="heart-little-card" />
                                 <Button className="horizontal-discover-btn">DISCOVER</Button>
@@ -47,8 +47,8 @@ class HorizontalCard extends React.Component {
                                 }} src={"https://images.sk-static.com/images/media/profile_images/artists/" + avatar + "/huge_avatar"} alt={avatar} />
                             </div>
                         </Col>
-                    </Row>
-                </Card>
+                    </Card>
+                </Row>
             </div>
 
         )
