@@ -25,8 +25,8 @@ class HorizontalCard extends React.Component {
         return (
 
             <div className="grid__item horizontalCard">
-                <Row>
-                    <Card>
+                <Card>
+                    <Row>
                         <Col>
                             <CardBody className="horizontal-text-card-left">
                                 <CardTitle>
@@ -35,7 +35,7 @@ class HorizontalCard extends React.Component {
                                 </CardTitle>
                                 <Save className="heart-little-card" />
                                 <a href={`/concert/${fav}`}>
-                                <Button className="horizontal-discover-btn">DISCOVER</Button>
+                                    <Button className="horizontal-discover-btn">DISCOVER</Button>
                                 </a>
                             </CardBody>
                         </Col>
@@ -49,8 +49,8 @@ class HorizontalCard extends React.Component {
                                 }} src={"https://images.sk-static.com/images/media/profile_images/artists/" + avatar + "/huge_avatar"} alt={avatar} />
                             </div>
                         </Col>
-                    </Card>
-                </Row>
+                    </Row>
+                </Card>
             </div>
 
         )
