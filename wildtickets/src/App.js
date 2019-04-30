@@ -49,7 +49,7 @@ class App extends Component {
             <Row>
               <Col>
                 <Card className="cardThree">
-                  <CardText >Discover popular artist and concerts near you !
+                  <CardText className="textColumn">Discover popular artist and concerts near you !
 Pick an artist or a date that you like and have a wonderful evening.
                   </CardText>
                   <Save className="disk-card" />
@@ -57,16 +57,16 @@ Pick an artist or a date that you like and have a wonderful evening.
               </Col>
               <Col>
                 <Card className="cardThree">
-                  <CardText >Put a like on the artist you prefer
+                  <CardText className="textColumn">Put a like on the artist you prefer
 and follow his tours on the "Favorites" tab to  never miss any concert near you.</CardText>
                 </Card>
               </Col>
               <Col>
                 <Card className="cardThree">
-                  <CardText >Save the date of a concert that you like
+                  <CardText className="textColumn">Save the date of a concert that you like
 so you don't forget it and organize your outings. Go to the "Favorite" tab to find opportunities for a good time.
-                  <Heart className="disk-card" />
                   </CardText>
+                  <Heart className="disk-card" />
                 </Card>
               </Col>
             </Row>
