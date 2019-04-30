@@ -54,7 +54,9 @@ class HorizontalCard extends React.Component {
 
     }
     render() {
-        const { name, date, venue, avatar } = this.props;
+
+        const { name, date, venue, avatar, fav } = this.props;
+
         return (
 
             <div className="grid__item horizontalCard">
@@ -67,7 +69,10 @@ class HorizontalCard extends React.Component {
                                         <p className="text-muted">{venue}-{formatDate(date)}</p>
                                 </CardTitle>
                                 <Save onClick={this.handleAddToFavorite} className={this.state.favorited ? "heart-filled" : "heart-little-card"}/>
+                                <a href={`/concert/${fav}`}>
+
                                 <Button className="horizontal-discover-btn">DISCOVER</Button>
+                                </a>
                             </CardBody>
                         </Col>
                         <Col>

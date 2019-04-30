@@ -47,8 +47,9 @@ class Bands extends React.Component {
     }
 
     render() {
-        const { name, avatar } = this.props;
+        const { name, avatar, fav } = this.props;
         return (
+
             <React.Fragment>
                 <Col className="grid__item verticalCard">
                     <Card>
@@ -65,11 +66,14 @@ class Bands extends React.Component {
                                 <h4 className="ellips-title">{name}</h4>
                             </CardTitle>
                             <Heart onClick={this.handleAddToFavorite} className={this.state.favorited ? "heart-filled" : "heart-little-card"} />
-                            <Button className="discover-btn">DISCOVER</Button>
+                            <a href={`/artist/${fav}`}>  
+                              <Button className="discover-btn">DISCOVER</Button>
+                            </a>
                         </CardBody>
                     </Card>
                 </Col>
             </React.Fragment>
+
         )
     }
 };
