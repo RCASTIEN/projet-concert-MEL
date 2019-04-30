@@ -20,13 +20,6 @@ const formatDate = (paramDate) => {
     return setDate = setDate.replace(regex, '/');
   }
 
-const formatDate = (paramDate) => {
-    let setDate = paramDate;
-    let regex = /^2019-/g;
-    setDate = setDate.replace(regex, '');
-    regex = /-/g;
-    return setDate = setDate.replace(regex, '/');
-}
 
 class HorizontalCard extends React.Component {
 
