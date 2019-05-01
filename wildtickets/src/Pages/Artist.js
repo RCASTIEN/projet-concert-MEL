@@ -2,9 +2,6 @@ import React, { Component, Fragment } from 'react';
 import Header from '../components/Header';
 import axios from "axios";
 import "../styles/Artist.css";
-import {
-    Container
-} from 'reactstrap';
 import Background from '../images/background_image.jpg';
 import Footer from '../components/Footer';
 
@@ -41,6 +38,11 @@ class Artists extends Component {
         <div className="bg-white">
           <img
             className="cadre"
+            style={{
+              backgroundImage: `url(${Background})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'}}
             src={
               "https://images.sk-static.com/images/media/profile_images/artists/" +
               this.state.artistId +
@@ -48,9 +50,15 @@ class Artists extends Component {
             }
             alt="Background"
             title={this.state.artistName}
+            
           />
           <img
             className="doublev"
+            style={{
+              backgroundImage: `url(${Background})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'}}
             src={
               "https://images.sk-static.com/images/media/profile_images/artists/" +
               this.state.artistId +
@@ -61,6 +69,11 @@ class Artists extends Component {
           />
           <img
             className="tet"
+            style={{
+              backgroundImage: `url(${Background})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'}}
             src={
               "https://images.sk-static.com/images/media/profile_images/artists/" +
               this.state.artistId +
@@ -102,6 +115,7 @@ class Artists extends Component {
             </div>
           ))}
         </div>
+        <Footer />
       </Fragment>
     );
   }
