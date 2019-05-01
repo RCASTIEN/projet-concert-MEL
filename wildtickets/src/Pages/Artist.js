@@ -5,6 +5,7 @@ import "../styles/Artist.css";
 import {
     Container
 } from 'reactstrap';
+import Background from '../images/background_image.jpg';
 import Footer from '../components/Footer';
 
 class Artists extends Component {
