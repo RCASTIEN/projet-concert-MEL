@@ -1,0 +1,18 @@
+.cercle {
+    clip-path: circle(50%);
+    width: 32vw;
+    margin-top: 2vw;
+    margin-left: 50%;
+    transform:translateX(-50%);
+    position: relative;
+}
+
+.oblique {
+    clip-path: polygon( 0 0, 100% 0, 100% 65%, 0 45%);
+    height: 66vw;
+    width: 66vw;
+    position: absolute;
+    margin-left: 50%;
+    transform:translateX(-50%);
+    filter: blur(10px) brightness(0.4);
+}

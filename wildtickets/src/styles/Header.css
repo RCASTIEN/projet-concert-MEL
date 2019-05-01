@@ -1,0 +1,15 @@
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-light {
+    box-shadow: 0 0 6px 0px #999999;
+}
+
+.gradient-logo {
+    background: linear-gradient(to right, #FF9671, #FF6F91);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 28px;
+}
