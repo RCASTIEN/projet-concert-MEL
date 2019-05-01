@@ -20,6 +20,7 @@ const formatDate = (paramDate) => {
     return setDate = setDate.replace(regex, '/');
   }
 
+
 class HorizontalCard extends React.Component {
 
     constructor(props) {
@@ -66,12 +67,14 @@ class HorizontalCard extends React.Component {
                             <CardBody className="horizontal-text-card-left">
                                 <CardTitle>
                                     <h4 className="ellips-title">{name}</h4>
-                                        <p className="text-muted">{venue}-{formatDate(date)}</p>
+
+                                    <p className="text-muted">{venue}-{formatDate(date)}</p>
+
+
                                 </CardTitle>
                                 <Save onClick={this.handleAddToFavorite} className={this.state.favorited ? "heart-filled" : "heart-little-card"}/>
                                 <a href={`/concert/${fav}`}>
-
-                                <Button className="horizontal-discover-btn">DISCOVER</Button>
+                                    <Button className="horizontal-discover-btn">DISCOVER</Button>
                                 </a>
                             </CardBody>
                         </Col>

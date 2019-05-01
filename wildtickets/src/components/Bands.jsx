@@ -66,7 +66,7 @@ class Bands extends React.Component {
                                 <h4 className="ellips-title">{name}</h4>
                             </CardTitle>
                             <Heart onClick={this.handleAddToFavorite} className={this.state.favorited ? "heart-filled" : "heart-little-card"} />
-                            <a href={`/artist/${fav}`}>  
+                            <a href={`/artist/${avatar}`}>  
                               <Button className="discover-btn">DISCOVER</Button>
                             </a>
                         </CardBody>

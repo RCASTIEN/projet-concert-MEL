@@ -4,19 +4,20 @@ import './styles/Home.css';
 import {
   Container,
   Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  Button,
+  Col,
+  Card,
 } from 'reactstrap';
 
 // Icons
-import { Search } from 'react-feather';
+import { Music, Save, Heart } from 'react-feather';
 
 import Header from './components/Header';
 import Footer from './components/Footer'
 import CardList from './components/CardList';
+import CardText from 'reactstrap/lib/CardText';
+import Row from 'reactstrap/lib/Row';
 import EventsList from './components/EventsList';
+
 
 class App extends Component {
   constructor(props) {
@@ -39,15 +40,30 @@ class App extends Component {
       <Fragment>
         <Header />
         <Container>
-          <h1 className="main-title">Book unique concerts at the best prices.</h1>
+          <h1 className="main-title">Book unique concerts at the best places.</h1>
           <Form className="search-bar-form">
-            <InputGroup>
-              <InputGroupAddon addonType="prepend" className="main-search-icon"><Search /></InputGroupAddon>
-              <Input className="search-bar" placeholder="Search by place, artist, genre..." />
-              <InputGroupAddon addonType="append">
-                <Button className="search-bar-btn" color="primary">Search</Button>
-              </InputGroupAddon>
-            </InputGroup>
+            <Col>
+              <Row className="cardIntro">
+                <Card className="cardThree">
+                  <CardText className="textColumn">Discover popular artist and concerts near you !
+Pick an artist or a date that you like and have a wonderful evening.
+                  </CardText>
+                  <Music className="disk-card" />
+                </Card>
+                <Card className="cardThree">
+                  <CardText className="textColumn">Put a like on the artist you prefer
+and follow his tours on the "Favorites" tab to  never miss any concert near you.
+                    </CardText>
+                  <Heart className="disk-card" />
+                </Card>
+                <Card className="cardThree">
+                  <CardText className="textColumn">Save the date of a concert that you like
+so you don't forget it and organize your outings. Go to the "Favorite" tab to find opportunities for a good time.
+                  </CardText>
+                  <Save className="disk-card" />
+                </Card>
+              </Row>
+            </Col>
           </Form>
           <div className="mb-5">
             <h2 className="sub-title mb-auto">Popular Artists</h2>

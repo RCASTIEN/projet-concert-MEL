@@ -24,6 +24,31 @@ a:hover {
     max-width: 520px;
     font-size: 3rem;
 }
+
+.cardThree{
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0 0 6px 0px #999999;
+    background-image: linear-gradient(to right, rgb(247, 184, 159), rgb(247, 187, 201));
+    padding: 5%;
+    border-radius: 5%;
+    width: 300px;
+    margin: 10% auto;  
+    height: 335px;
+    margin-left: -10px;
+}
+.textColumn{
+    height: 150px;
+    text-align: justify;
+    margin-top: -30px;
+}
+.disk-card{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    margin-top: 45px;
+}
+
 .search-bar-form {
     margin: 40px 0 140px;
 }
@@ -151,7 +176,12 @@ a:hover {
     border: none;
     width: 100px;
 }
+
 .button-lign{
     display: flex;
     justify-content: space-around;
+}
+
+.cardIntro {
+    margin-right: -300px;
 }

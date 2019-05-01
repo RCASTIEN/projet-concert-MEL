@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../components/Header';
 import axios from "axios";
-import Background from '../background_image.jpg';
 import "../styles/Artist.css";
+import Background from '../images/background_image.jpg';
 import Footer from '../components/Footer';
 
 class Artists extends Component {
